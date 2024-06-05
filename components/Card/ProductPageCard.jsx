@@ -6,11 +6,11 @@ import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
-import { AddProductToCart } from "@/Slices/navSlice";
+import { AddProductToCart } from "@/redux/Slices/navSlice";
 
 const ProductPageCard = ({ name, price, pic }) => {
-    const [productQuantity, setProductQuantity] = useState(0);
-    const dispatch = useDispatch();
+  const [productQuantity, setProductQuantity] = useState(0);
+  const dispatch = useDispatch();
 
   const handleProductQuantity = (value) => {
     if (value === "increase") {
@@ -36,20 +36,20 @@ const ProductPageCard = ({ name, price, pic }) => {
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-      
-        <div className="relative h-72 w-[100%] lg:h-[400px] lg:w-[400px]">
-          <Image
-            src={pic}
-            alt={name}
-            fill
-            placeholder="blur"
-            blurDataURL={pic}
-            priority
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="object-cover object-center rounded-lg"
-          />
-        </div>
-      
+
+      <div className="relative h-72 w-[100%] lg:h-[400px] lg:w-[400px]">
+        <Image
+          src={pic}
+          alt={name}
+          fill
+          placeholder="blur"
+          blurDataURL={pic}
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover object-center rounded-lg"
+        />
+      </div>
+
       <div className="w-full md:w-fit">
         <div>
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-2 md:mb-4">{name}</h1>

@@ -1,31 +1,31 @@
 "use client"
 import Image from "next/image";
-import { GetDataFromLocalStorage } from "@/Slices/navSlice"
-import React, {useState, useEffect} from "react"
+import { GetDataFromLocalStorage } from "@/redux/Slices/navSlice"
+import React, { useState, useEffect } from "react"
 import { useDispatch } from "react-redux"
 
-const Modal = ()=>{
-    const dispatch = useDispatch()
-    let savedData 
-    savedData = JSON.parse(localStorage.getItem("cartItems"))
+const Modal = () => {
+  const dispatch = useDispatch()
+  let savedData
+  savedData = JSON.parse(localStorage.getItem("cartItems"))
 
-    const [data, setData] = useState(savedData ?? { totalCartItems : [],
-        cartQuantity : 0,
-        cartItemsTotalPrice:0
-    })
+  const [data, setData] = useState(savedData ?? {
+    totalCartItems: [],
+    cartQuantity: 0,
+    cartItemsTotalPrice: 0
+  })
 
-    
-    const [showModal, setShowModal] = useState(true);
-    
-    const handleShowModal = ()=>{
-        dispatch(GetDataFromLocalStorage(data))
-        setShowModal(false)
-    }
-return(
+
+  const [showModal, setShowModal] = useState(true);
+
+  const handleShowModal = () => {
+    dispatch(GetDataFromLocalStorage(data))
+    setShowModal(false)
+  }
+  return (
     <article
-      className={`z-30 shadow-xl h-screen w-screen fixed backdrop-blur-xl bg-black/20  items-center justify-center top-0 left-0 right-0 bottom-0 ${
-        showModal ? "flex" : "hidden"
-      } px-1`}
+      className={`z-30 shadow-xl h-screen w-screen fixed backdrop-blur-xl bg-black/20  items-center justify-center top-0 left-0 right-0 bottom-0 ${showModal ? "flex" : "hidden"
+        } px-1`}
       onClick={handleShowModal}
     >
       <div className="relative w-full h-[80vh] md:w-[400px] md:h-[70vh] lg:w-[500px] rounded-md">
@@ -47,7 +47,7 @@ return(
         </button>
       </div>
     </article>
-)
+  )
 }
 
 export default Modal

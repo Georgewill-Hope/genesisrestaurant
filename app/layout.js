@@ -4,8 +4,9 @@ import "./globals.css";
 import { Download, Footer, Navbar } from "@/components";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Providers from "./providers";
+// import Providers from "./providers";
 import dynamic from "next/dynamic";
+import Providers from "../redux/Providers";
 
 const Modal = dynamic(()=> import("@/components/modal/Modal"),{
   ssr: false,

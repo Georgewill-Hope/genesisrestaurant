@@ -1,6 +1,6 @@
 "use client";
 
-import { DeleteProductFromCart } from "@/Slices/navSlice";
+import { DeleteProductFromCart } from "@/redux/Slices/navSlice";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { AiOutlineClose } from "react-icons/ai";
@@ -12,7 +12,7 @@ const variants = {
   visible: { opacity: 1 },
 };
 
-const CartCard = ({ name, pic, quantity, totalPrice,index }) => {
+const CartCard = ({ name, pic, quantity, totalPrice, index }) => {
   const dispatch = useDispatch();
 
   const handleDeleteItem = (name) => {

@@ -1,4 +1,4 @@
-import cartReducer from "@/Slices/navSlice";
+import cartReducer from "@/redux/Slices/navSlice";
 import { configureStore } from "@reduxjs/toolkit";
 
 export const store = configureStore({

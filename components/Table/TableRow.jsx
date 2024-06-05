@@ -1,6 +1,6 @@
 "use client";
 
-import { ChangeProductQuantity, DeleteProductFromCart } from "@/Slices/navSlice";
+import { ChangeProductQuantity, DeleteProductFromCart } from "@/redux/Slices/navSlice";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useDispatch } from "react-redux";
@@ -10,15 +10,15 @@ const variants = {
   visible: { opacity: 1 },
 };
 
-const TableRow = ({ name, pic, price, totalPrice, quantity,index }) => {
+const TableRow = ({ name, pic, price, totalPrice, quantity, index }) => {
   const dispatch = useDispatch();
 
   const handleDeleteItem = (name) => {
     dispatch(DeleteProductFromCart(name));
   };
 
-  const handleProductQuantity = ({name, ability}) => {
-    dispatch(ChangeProductQuantity({name, ability}));
+  const handleProductQuantity = ({ name, ability }) => {
+    dispatch(ChangeProductQuantity({ name, ability }));
   };
 
   return (

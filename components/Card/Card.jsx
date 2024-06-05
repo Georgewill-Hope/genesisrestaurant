@@ -6,7 +6,7 @@ import React, { useState, useEffect } from "react";
 
 import { motion } from "framer-motion";
 import { useDispatch } from "react-redux";
-import { AddProductToCart} from "@/Slices/navSlice";
+import { AddProductToCart } from "@/redux/Slices/navSlice";
 import { toast } from "react-toastify";
 
 const variants = {
