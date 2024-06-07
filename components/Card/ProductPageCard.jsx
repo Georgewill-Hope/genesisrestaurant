@@ -43,9 +43,8 @@ const ProductPageCard = ({ name, price, pic }) => {
           alt={name}
           fill
           placeholder="blur"
-          blurDataURL={pic}
           priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw,"
           className="object-cover object-center rounded-lg"
         />
       </div>

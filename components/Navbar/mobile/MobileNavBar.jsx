@@ -8,6 +8,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { IoPersonOutline } from "react-icons/io5";
 import { RiShoppingBasket2Line } from "react-icons/ri";
 import { useSelector } from "react-redux";
+import logo from "@/public/images/logo.avif";
 
 const MobileNavBar = ({ handleShowCart }) => {
   const [showNavMenu, setShowNavMenu] = useState(false);
@@ -23,11 +24,11 @@ const MobileNavBar = ({ handleShowCart }) => {
       <div className="flex items-center justify-between">
         <div className="w-28 h-16 relative">
           <Image
-            src="/images/logo.webp"
+            src={logo}
             alt="logo"
             fill
             priority
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, "
             className="object-contain"
           />
         </div>
@@ -64,7 +65,7 @@ const MobileNavBar = ({ handleShowCart }) => {
           onClick={handleShowNavMenu}
         />
         <div
-          className={` bg-white h-screen w-72 md:w-80 duration-[1500ms]  ${
+          className={` bg-red-100 h-screen w-72 md:w-80 duration-[1500ms]  ${
             !showNavMenu && "-mr-96"
           }`}
         >
@@ -74,8 +75,8 @@ const MobileNavBar = ({ handleShowCart }) => {
           <ul className="flex flex-col justify-center gap-3 font-thin px-6">
             <li
               className={`${
-                path === "/" && "text-[#FD0000]"
-              } border-b border-black pb-2 font-semibold`}
+                path === "/" && "text-[#000000] font-black tracking-widest"
+              } border-b border-black pb-2 font-semibold tracking-wider`}
               onClick={handleShowNavMenu}
             >
               <Link href="/">HOME</Link>
@@ -84,8 +85,9 @@ const MobileNavBar = ({ handleShowCart }) => {
               <li
                 key={item.id}
                 className={`${
-                  path === item.page && "text-[#FD0000] font-semibold"
-                } border-b border-black pb-2 font-semibold`}
+                  path === item.page &&
+                  " text-[#000000] font-black tracking-widest"
+                } border-b border-black pb-2 font-semibold tracking-wider`}
                 onClick={handleShowNavMenu}
               >
                 <Link href={item.page}>{item.text}</Link>

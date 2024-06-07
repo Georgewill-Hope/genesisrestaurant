@@ -28,7 +28,7 @@ const Cart = ({ showCart, handleShowCart }) => {
           onClick={handleShowCart}
         />
         <div
-          className={` bg-white h-screen w-72 md:w-80 duration-[1500ms]  overflow-scroll overflow-x-hidden ${
+          className={` bg-red-100 h-screen w-72 md:w-80 duration-[1500ms]  overflow-scroll overflow-x-hidden ${
             !showCart && "-mr-96"
           }`}
         >
@@ -47,7 +47,7 @@ const Cart = ({ showCart, handleShowCart }) => {
               <div className="flex flex-col gap-7 items-center justify-center py-8">
                 <p className="text-xl">You cart is empty!</p>
                 <Link href="/product">
-                  <button className="animate-bounce bg-genesis-red text-base font-bold px-4 py-2 rounded-lg text-white outline-none">
+                  <button className="animate-bounce bg-gradient-to-tr tracking-wider from-genesis-red via-black to-genesis-red text-white text-base font-bold px-4 py-2 rounded-lg outline-none">
                     Get a Meal
                   </button>
                 </Link>
@@ -68,11 +68,11 @@ const Cart = ({ showCart, handleShowCart }) => {
               onClick={handleShowCart}
             >
               <Link href="/cart">
-                <button className="bg-genesis-red text-sm font-bold px-4 py-2 rounded-lg text-white hover:bg-black duration-500 outline-none">
+                <button className="bg-gradient-to-tr from-genesis-red via-black to-genesis-red text-sm font-semibold px-4 py-2 rounded-lg text-white hover:bg-black duration-500 outline-none">
                   VIEW CART
                 </button>
               </Link>
-              <button className="bg-black text-sm px-4 py-2 rounded-lg text-white hover:bg-[#FD0000] duration-500 outline-none">
+              <button className="bg-gradient-to-tr from-genesis-red via-black to-genesis-red text-sm font-semibold px-4 py-2 rounded-lg text-white hover:bg-black duration-500 outline-none">
                 CHECKOUT
               </button>
             </div>
@@ -82,8 +82,8 @@ const Cart = ({ showCart, handleShowCart }) => {
               <Link
                 href="/"
                 className={`${
-                  path === "/" && "text-genesis-red"
-                } border-b border-black pb-2 font-semibold hover:ps-5 duration-500 hover:text-genesis-red flex`}
+                  path === "/" && "text-[#000000] font-black tracking-widest"
+                } border-b border-black pb-2 font-semibold hover:ps-5 duration-500 tracking-wider hover:text-genesis-red flex`}
                 onClick={handleShowCart}
               >
                 HOME
@@ -92,8 +92,9 @@ const Cart = ({ showCart, handleShowCart }) => {
             {NavBarData.map((item) => (
               <li key={item.id} onClick={handleShowCart}>
                 <Link
-                  className={`border-b border-black py-2 font-semibold hover:ps-5 duration-500 hover:text-[#FD0000] flex ${
-                    item.page === path && "text-genesis-red font-semibold"
+                  className={`border-b border-black py-2 font-semibold tracking-wider hover:ps-5 duration-500 hover:text-[#FD0000] flex ${
+                    item.page === path &&
+                    " text-[#000000] font-black tracking-widest"
                   }`}
                   href={item.page}
                 >

@@ -11,7 +11,7 @@ const page = () => {
             <MdOutlineEmail className="text-5xl" />
           </div>
           <div>
-            <p className="text-[#8D8D8D] break-all">
+            <p className="text-black break-all tracking-wider">
               georgewillhopeolilenya@gmail.com
             </p>
           </div>
@@ -24,8 +24,8 @@ const page = () => {
             <h3 className=" md:text-xl font-bold text-[#1E1D23]">
               PHONE NUMBERS
             </h3>
-            <p className="text-[#8D8D8D]">+2348051073722</p>
-            <p className="text-[#8D8D8D]">+2349******570</p>
+            <p className="text-black tracking-wider">+2348051073722</p>
+            <p className="text-black tracking-wider">+2349******570</p>
           </div>
         </div>
       </div>

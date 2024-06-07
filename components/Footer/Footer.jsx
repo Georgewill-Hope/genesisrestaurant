@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import { FaFacebookF, FaWhatsapp, FaInstagram,} from "react-icons/fa";
+import { FaFacebookF, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
@@ -43,24 +43,17 @@ const Footer = () => {
         <div>
           <h3 className="font-bold text-xl">HELP & SUPPORT</h3>
           <ul className="flex flex-col gap-4 mt-3">
-            <Link href="/">
-              <li>About Us</li>
-            </Link>
-            <Link href="/">
-              <li>Find A Store</li>
-            </Link>
-            <Link href="/">
-              <li>Share Your Feedback</li>
-            </Link>
-            <Link href="/">
-              <li>Outdoor Catering</li>
-            </Link>
-            <Link href="/">
-              <li>News & BLog</li>
-            </Link>
-            <Link href="/">
-              <li>Admin</li>
-            </Link>
+            <li>About Us</li>
+
+            <li>Find A Store</li>
+
+            <li>Share Your Feedback</li>
+
+            <li>Outdoor Catering</li>
+
+            <li>News & BLog</li>
+
+            <li>Admin</li>
           </ul>
         </div>
       </div>

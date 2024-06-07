@@ -4,7 +4,7 @@ import { SwiperSlide } from "swiper/react";
 import Slide from "../Slide/Slide";
 import { SlideData } from "@/_data";
 import Image from "next/image";
-
+import advertImage from "@/public/images/advert5.avif"
 const Hero = () => {
   return (
     <section>
@@ -16,8 +16,8 @@ const Hero = () => {
                 src={slide.img}
                 alt="advert"
                 placeholder="blur"
-                blurDataURL={slide.img}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw"
                 className={`object-cover ${
                   slide.id === 9 ? "object-center" : "object-top"
                 }`}

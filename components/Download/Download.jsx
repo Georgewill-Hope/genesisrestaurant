@@ -16,7 +16,7 @@ const Download = () => {
           <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-5">
             <div className="h-14 w-40 bg-black rounded-lg relative">
               <Image
-                src="/images/google.webp"
+                src="/images/google.avif"
                 alt=""
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -25,7 +25,7 @@ const Download = () => {
             </div>
             <div className="h-14 w-40 bg-black rounded-lg relative">
               <Image
-                src="/images/apple.webp"
+                src="/images/apple.avif"
                 alt=""
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

@@ -41,7 +41,7 @@ const Form = () => {
 
         <button
           type="submit"
-          className="bg-[#FD0000] px-5 py-3 text-white text-sm outline-none font-semibold tracking-wider hover:bg-black rounded-lg duration-1000 w-fit mx-auto"
+          className=" bg-gradient-to-tr from-genesis-red via-black to-genesis-red px-5 py-3 text-white text-sm outline-none font-semibold tracking-wide rounded-lg w-fit mx-auto"
           disabled={state.submitting}
         >
           SEND MESSAGE

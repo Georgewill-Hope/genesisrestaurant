@@ -1,3 +1,14 @@
+import advert1 from "@/public/images/gen7.avif";
+import advert2 from "@/public/images/gen11.avif";
+import advert3 from "@/public/images/gen10.avif";
+import advert4 from "@/public/images/gen4.avif";
+import advert5 from "@/public/images/gen8.avif";
+import advert6 from "@/public/images/advert5.avif";
+import product1 from "@/public/images/gen12.avif";
+import product2 from "@/public/images/gen4.avif";
+import product3 from "@/public/images/gen3.avif";
+import product4 from "@/public/images/gen13.avif";
+import product5 from "@/public/images/gen2.avif";
 export const routes = [
   {
     id: 1,
@@ -19,28 +30,27 @@ export const routes = [
 export const SlideData = [
   {
     id: 9,
-    img: "/images/gen7.avif",
+    img: advert1,
   },
   {
     id: 6,
-    img: "/images/gen11.avif",
+    img:advert2,
   },
   {
     id: 7,
-    img: "/images/gen10.avif",
+    img: advert3,
   },
-
   {
     id: 1,
-    img: "/images/advert4.avif",
+    img: advert4
   },
   {
     id: 111,
-    img: "/images/gen8.avif",
+    img: advert5,
   },
   {
     id: 2,
-    img: "/images/advert5.avif",
+    img: advert6,
   },
 ];
 
@@ -191,31 +201,31 @@ export const resturantsData = [
 export const ProductData = [
   {
     name: "Island Glazed Chicken Rice",
-    pic: "/images/gen12.avif",
+    pic: product1,
     price: 2000,
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, doloremque! Earum neque fugiat excepturi accusantium ipsa maxime assumenda natus maiores dolores consequatur. Perferendis suscipit qui omnis ab deleniti? Eaque, nobis?",
   },
   {
     name: "white Rice and Banga Stew",
-    pic: "/images/gen4.avif",
+    pic: product2,
     price: 2000,
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, doloremque! Earum neque fugiat excepturi accusantium ipsa maxime assumenda natus maiores dolores consequatur. Perferendis suscipit qui omnis ab deleniti? Eaque, nobis?",
   },
   {
     name: "White Rice and chicken Stew",
-    pic: "/images/gen3.avif",
+    pic: product3,
     price: 1500,
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, doloremque! Earum neque fugiat excepturi accusantium ipsa maxime assumenda natus maiores dolores consequatur. Perferendis suscipit qui omnis ab deleniti? Eaque, nobis?",
   },
   {
     name: "Nigerian Fried Rice and Chicken",
-    pic: "/images/gen13.avif",
+    pic: product4,
     price: 3500,
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, doloremque! Earum neque fugiat excepturi accusantium ipsa maxime assumenda natus maiores dolores consequatur. Perferendis suscipit qui omnis ab deleniti? Eaque, nobis?",
   },
   {
     name: "Chinese Rice and papharica",
-    pic: "/images/gen2.avif",
+    pic: product5,
     price: 2500,
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, doloremque! Earum neque fugiat excepturi accusantium ipsa maxime assumenda natus maiores dolores consequatur. Perferendis suscipit qui omnis ab deleniti? Eaque, nobis?",
   },

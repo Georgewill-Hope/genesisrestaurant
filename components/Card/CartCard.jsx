@@ -38,9 +38,8 @@ const CartCard = ({ name, pic, quantity, totalPrice, index }) => {
           alt={name}
           fill
           placeholder="blur"
-          blurDataURL={pic}
           priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 30vw"
           className="object-cover object-center rounded-md"
         />
       </div>
